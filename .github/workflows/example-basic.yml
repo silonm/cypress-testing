@@ -1,4 +1,13 @@
-  - name: 'Upload Artifact'
+name: Node CI
+
+on: [push]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+     
+     - name: 'Upload Artifact'
     uses: actions/upload-artifact@v2
     with:
       name: my-artifact
