@@ -1,15 +1,6 @@
-name: example-basic
-on: [push]
-jobs:
- 
-  basic-on-windows:
-    runs-on: windows-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: ./
-          build: npx cypress info
+  - name: 'Upload Artifact'
+    uses: actions/upload-artifact@v2
+    with:
+      name: my-artifact
+      path: my_file.txt
+      retention-days: 5
