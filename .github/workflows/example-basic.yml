@@ -6,10 +6,8 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     steps:
-     
-     - name: 'Upload Artifact'
-    uses: actions/upload-artifact@v2
-    with:
-      name: my-artifact
-      path: my_file.txt
-      retention-days: 5
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: my_file.txt
