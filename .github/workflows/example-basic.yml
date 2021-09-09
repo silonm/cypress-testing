@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [pull]
+on: [push]
 
 jobs:
   build_and_test:
